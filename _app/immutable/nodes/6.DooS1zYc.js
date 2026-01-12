@@ -1,4 +1,4 @@
-import{f as t,a as s}from"../chunks/clqvm2r8.js";import"../chunks/DeQGkZzB.js";import{n as i}from"../chunks/CPFsoyQ0.js";var n=t(`<h1 class="eprase-h1">New for 2026</h1> <h2 class="eprase-h2">Learning Lab Launch</h2> <div class="accordion-text"><p>NHSE Electronic Prescribing Learning Lab -- This interactive learning resource, 
+import{f as t,a as s}from"../chunks/5TDW9yV_.js";import"../chunks/BIstr6_H.js";import{n as i}from"../chunks/sRifP6PP.js";var n=t(`<h1 class="eprase-h1">New for 2026</h1> <h2 class="eprase-h2">Learning Lab Launch</h2> <div class="accordion-text"><p>NHSE Electronic Prescribing Learning Lab -- This interactive learning resource, 
        developed to support digital and pharmacy teams to optimise their electronic 
        prescribing systems, is now <a href="/lab">available to access</a>.</p> <p>We will formally launch the Learning Lab at the NHSE ePrescribing Masterclass 
         on Wednesday 25th February 2026. Please contact <a href="mailto:england.digitalmedicines@nhs.net">england.digitalmedicines@nhs.net</a> for a link to the meeting and to learn more about how this resource was developed 
