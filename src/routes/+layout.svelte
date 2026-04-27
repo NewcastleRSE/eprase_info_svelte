@@ -33,24 +33,20 @@
         '/contact': 'Get in Touch'
     };
 
-    let displayTitle = $derived(() => {
-        const path = page.url.pathname.replace(/\/$/, ''); // Clean trailing slash
-        const lookup = path === '' ? '/' : path;
-        return titles[lookup] || null; // Return null if no title is defined for the path
-    });
+    let displayTitle = $derived(titles[page.url.pathname.replace(/\/$/, '') || '/'] || null);
 
 </script>
 <svelte:head>
-    <title>{displayTitle()} | ePRaSE</title>
+    <title>{displayTitle}</title>
     
     <meta name="description" content="Electronic Prescribing Risk Assessment Safety Evaluation" />
 </svelte:head>
 <div class="app-container">
 <Navigation />
 
-{#if displayTitle()}
+{#if displayTitle}
     {#key pathKey}
-        <PageHeader title={displayTitle()} />
+        <PageHeader title={displayTitle} />
     {/key}
 {/if}
 

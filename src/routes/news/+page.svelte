@@ -23,7 +23,7 @@
         Lead Pharmacist for Clinical Informatics, on how to interpret and 
         respond to your ePRaSE assessment results.</p>
         <div class="eprase-video">
-    				<iframe width="560" height="315" src="https://www.youtube.com/embed/xULluERejNk"></iframe>
+    				<iframe title="user experience video" width="560" height="315" src="https://www.youtube.com/embed/xULluERejNk"></iframe>
         </div>
   </div>
 <h2>ePRaSE Version 4</h2>
