@@ -52,7 +52,7 @@
     }
 
     .report-tabs a.active, .report-tabs a:hover {
-        background: var(--nhs-blue); /* NHS Blue */
+        background: var(--nhs-dark-blue); /* NHS Blue */
         color: white;
         font-weight: bold;
     }

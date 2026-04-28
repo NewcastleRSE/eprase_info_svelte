@@ -39,7 +39,7 @@
                 </a>
             {/each}
             </div>
-        <hr class="nav-divider">
+        <hr class="nav-divider desktop-only">
         <div class="nav-row bottom-row desktop-only">
             {#each bottomLinks as link}
                 <a 
