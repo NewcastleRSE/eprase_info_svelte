@@ -14,7 +14,7 @@
     <p>Good mitigation in the ePRaSE tool is defined as where an EP system correctly identifies a risk of error, providing an appropriate response when a medicine is prescribed.</p>
 
     <p>Please find below the results chart a summary of contents and explanatory notes.</p>
-  <iframe title="ePRaSE Results Charts - Anonymous for publishing" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiZmJjYjI3ZmItMDY1Zi00NGI2LTk3OWMtY2VhM2E2NzYzZjY3IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+  <iframe title="ePRaSE Results Charts - Anonymous for publishing" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiZmJjYjI3ZmItMDY1Zi00NGI2LTk3OWMtY2VhM2E2NzYzZjY3IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" style="border: 1px solid #999;" allowFullScreen="true"></iframe>
   </div>
   <h2 class="eprase-h2">Explanatory Notes</h2>
     <div class="accordion-text">

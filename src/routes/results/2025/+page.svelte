@@ -1,27 +1,42 @@
 <script>
-    import { fade, fly } from 'svelte/transition';
-    let adultCode = '';
-    let pedCode = '';
+  import { fade, fly } from 'svelte/transition';
+  let adultCode = '';
+  let pedCode = '';
 </script>
+
 <div in:fade={{ duration: 400, delay: 200 }} out:fade={{ duration: 200 }}>
-<h1 class="report-h1" in:fly={{ x: -50, duration: 800, delay: 400 }}>Results 2025</h1>
-<div class="accordion-text">
-<p>The 2025 ePRaSE assessment cycle assessed the performance of electronic prescribing systems across 109 adult assessments (107 trusts) and 39 paediatric assessments (39 trusts), spanning 19 EPMA systems. This represents a comprehensive national snapshot to date of prescribing safety mitigation in English NHS digital systems. The findings reported at the 22nd April 2026 Masterclass and below, suggest that improvement in electronic prescribing safety is achievable and observable, particularly for high risk medicines, but that local configuration underpinned by leadership and system update cadence, are the primary drivers of performance. The results reinforce the need for close collaboration between users and vendors.</p>
+  <h1 class="report-h1" in:fly={{ x: -50, duration: 800, delay: 400 }}>
+    Results 2025
+  </h1>
+  <div class="accordion-text">
+    <p>
+      The 2025 ePRaSE assessment cycle assessed the performance of electronic prescribing systems across 109 adult assessments (107 trusts) and 39 paediatric assessments (39 trusts), spanning 19 EPMA systems. This represents a comprehensive national snapshot to date of prescribing safety mitigation in English NHS digital systems. The findings reported at the 22nd April 2026 Masterclass and below, suggest that improvement in electronic prescribing safety is achievable and observable, particularly for high risk medicines, but that local configuration underpinned by leadership and system update cadence, are the primary drivers of performance. The results reinforce the need for close collaboration between users and vendors.
+    </p>
 
-<p>The interactive Power BI reports with explanatory notes are provided here for users to review and compare their system results against that of peers from the pooled 2025 data. The primary performance metric is 'good mitigation' defined as where an EP system correctly identifies a risk of error, providing an appropriate response when a medicine is prescribed.</p>
+    <p>
+      The interactive Power BI reports with explanatory notes are provided here for users to review and compare their system results against that of peers from the pooled 2025 data. The primary performance metric is 'good mitigation' defined as where an EP system correctly identifies a risk of error, providing an appropriate response when a medicine is prescribed.
+    </p>
 
-<p>Registered users who have recently completed the 2025 assessment will have received an email with their individual trust and system identification reference numbers to be used when reviewing the information. Users are welcome to share and discuss any aspect of their own results within formal or informal user groups, such as vendor user groups, to support system optimisation. Note for return users - please disregard your previously allocated trust ID and vendor numbers and use those newly allocated above when viewing your 2025 results.</p>
+    <p>
+      Registered users who have recently completed the 2025 assessment will have received an email with their individual trust and system identification reference numbers to be used when reviewing the information. Users are welcome to share and discuss any aspect of their own results within formal or informal user groups, such as vendor user groups, to support system optimisation. Note for return users - please disregard your previously allocated trust ID and vendor numbers and use those newly allocated above when viewing your 2025 results.
+    </p>
 
-<p>To further support understanding of how to interpret and respond to your ePRaSE results, we recommend the following resources accessible in this website:</p>
-<ul>
-    <li><a href="/using">User experience video</a>: Responding to ePRaSE, Andrew Heed</li>
-    <li><a href="/lab">Electronic Prescribing Learning Lab</a>: An interactive resource designed to help digital and pharmacy teams optimise their electronic prescribing systems.</li>
-</ul>
-</div>
+    <p>
+      To further support understanding of how to interpret and respond to your ePRaSE results, we recommend the following resources accessible in this website:
+    </p>
+    <ul>
+      <li>
+        <a href="/using">User experience video</a>: Responding to ePRaSE, Andrew Heed
+      </li>
+      <li>
+        <a href="/lab">Electronic Prescribing Learning Lab</a>: An interactive resource designed to help digital and pharmacy teams optimise their electronic prescribing systems.
+      </li>
+    </ul>
+  </div>
 
 <h2 class="eprase-h2">Adult Patients Report</h2>
 <div class="accordion-text">
-    <iframe title="Anonymized ePRaSE Adult Results Charts" width="1024" height="612" src="https://app.powerbi.com/view?r={adultCode}" frameborder="0" allowFullScreen="true"></iframe>
+    <iframe title="Anonymized ePRaSE Adult Results Charts" width="1024" height="612" src={"https://app.powerbi.com/view?r=" + adultCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
 
     <h3>Explanatory Notes</h3>
     <p class='highlight'>Page 1: EP System Performance Adults V4 2025</p>
@@ -67,7 +82,7 @@
 
 <h2 class="eprase-h2">Paediatric Patients Report</h2>
 <div class="accordion-text">
-    <iframe title="Anonymized ePRaSE Paediatric Results Charts" width="1024" height="612" src="https://app.powerbi.com/view?r={pedCode}" frameborder="0" allowFullScreen="true"></iframe>
+    <iframe title="Anonymized ePRaSE Paediatric Results Charts" width="1024" height="612" src={"https://app.powerbi.com/view?r=" + pedCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
 
 
     <h3>Explanatory Notes</h3>
