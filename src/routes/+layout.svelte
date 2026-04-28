@@ -64,6 +64,7 @@
     :global(.accordion-text) {width: 60%; margin: auto; font-size: 1.2em; line-height: 1.6; margin-bottom: 30px;}
     :global(.eprase-image) {width: 40%; float: right; margin: 0 0 10px 10px; border: 2px solid #1e2a71;}
     :global(.eprase-h1) {font-size: 2.5em; color: #1e2a71; margin-left: 5%; position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+    :global(.report-h1) {font-size: 2.5em; color: #1e2a71; margin-left: 5%; position:relative;}
     :global(.eprase-h2) {font-size: 1.8em; color: #3e53cc; font-style: italic; margin-left: 15%}
     .navbar {
         padding: 0; 
