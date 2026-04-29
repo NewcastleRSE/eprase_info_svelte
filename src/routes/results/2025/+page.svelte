@@ -1,7 +1,7 @@
 <script>
   import { fade, fly } from 'svelte/transition';
   let adultCode = '';
-  let pedCode = '';
+  let pedCode = 'c50839c3-fdc9-4288-83b5-9821bd641daa';
 </script>
 
 <div in:fade={{ duration: 400, delay: 200 }} out:fade={{ duration: 200 }}>
@@ -36,8 +36,7 @@
 
 <h2 class="eprase-h2">Adult Patients Report</h2>
 <div class="accordion-text">
-    <iframe title="Anonymized ePRaSE Adult Results Charts" width="1024" height="612" src={"https://app.powerbi.com/view?r=" + adultCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
-
+    <iframe title="ePRaSE Results Charts V4 Adults 25 - Anonymised (publish) final" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=09fed51e-6159-4750-af7c-f1dca95fe12b&autoAuth=true&ctid=9c5012c9-b616-44c2-a917-66814fbe3e87" frameborder="0" allowFullScreen="true"></iframe>
     <h3>Explanatory Notes</h3>
     <p class='highlight'>Page 1: EP System Performance Adults V4 2025</p>
 
@@ -82,8 +81,7 @@
 
 <h2 class="eprase-h2">Paediatric Patients Report</h2>
 <div class="accordion-text">
-    <iframe title="Anonymized ePRaSE Paediatric Results Charts" width="1024" height="612" src={"https://app.powerbi.com/view?r=" + pedCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
-
+    <iframe title="ePRaSE Results Charts V4 Paediatrics 25 - Anonymised (publish) final" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=c50839c3-fdc9-4288-83b5-9821bd641daa" frameborder="0" allowFullScreen="true"></iframe>
 
     <h3>Explanatory Notes</h3>
     <p class='highlight'>Page 1: EP System Performance</p>
