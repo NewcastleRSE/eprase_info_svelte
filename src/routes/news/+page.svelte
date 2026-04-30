@@ -1,13 +1,7 @@
 <h1 class="eprase-h1">ePRaSE News</h1>
-  <div class="alert-text">
-    <p><strong>Update on Interactive Reports</strong></p>
-    <p>The interactive Power BI reports for 2025 results will be <a href="/results/2025">available 
-      here</a> soon. 
-      Due to technical issues, there's a short delay, sorry about that. We'll email 
-      users as soon as it's live, or please check back next week for an update.</p>
-  </div>
+  
   <div class="accordion-text">
-    <p>Results from Version 4 (2025) of the Electronic Prescribing Risk and Safety Evaluation (ePRaSE) tool are now available as interactive, anonymised Power BI reports on the Results 2025 page of the ePRaSE website. Trusts that completed the 2025 assessment have been emailed unique identification numbers, enabling benchmarking against other trusts using the same electronic prescribing (EP) system. Explanatory notes are provided to support interpretation of the data.</p>
+    <p>Results from Version 4 (2025) of the Electronic Prescribing Risk and Safety Evaluation (ePRaSE) tool are now available as interactive, anonymised Power BI reports on <a href="/results/2025">the Results 2025 page</a> of this website. Trusts that completed the 2025 assessment have been emailed unique identification numbers, enabling benchmarking against other trusts using the same electronic prescribing (EP) system. Explanatory notes are provided to support interpretation of the data.</p>
 
     <p>To support interpretation and response to your ePRaSE results, we recommend the following resources:</p>
 

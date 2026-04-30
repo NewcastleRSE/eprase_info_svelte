@@ -8,12 +8,6 @@
   <h1 class="report-h1" in:fly={{ x: -50, duration: 800, delay: 400 }}>
     Results 2025
   </h1>
-  <div class="alert-text">
-    <p><strong>Update on Interactive Reports</strong></p>
-    <p>The interactive Power BI reports for 2025 results will be available here soon. 
-      Due to technical issues, there's a short delay, sorry about that. We'll email 
-      users as soon as it's live, or please check back next week for an update.</p>
-  </div>
   <div class="accordion-text">
     <p>
       The 2025 ePRaSE assessment cycle assessed the performance of electronic prescribing systems across 109 adult assessments (107 trusts) and 39 paediatric assessments (39 trusts), spanning 19 EPMA systems. This represents a comprehensive national snapshot to date of prescribing safety mitigation in English NHS digital systems. The findings reported at the 22nd April 2026 Masterclass and below, suggest that improvement in electronic prescribing safety is achievable and observable, particularly for high risk medicines, but that local configuration underpinned by leadership and system update cadence, are the primary drivers of performance. The results reinforce the need for close collaboration between users and vendors.
@@ -42,8 +36,7 @@
 
 <h2 class="eprase-h2">Adult Patients Report</h2>
 <div class="accordion-text">
-    <!-- <iframe title="ePRaSE Results Charts V4 Adults 25 - Anonymised (publish) final" width="1140" height="541.25" frameborder="0" allowFullScreen="true"></iframe> -->
-     <p>An interactive Power BI report is coming soon.</p>
+    <iframe title="ePRaSE Results Charts V4 Adults 25 - Anonymised (publish) final" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMDlkMTQxZjItY2UwZS00ZDdlLTk5OWItNzkwM2JmMmVlNmE2IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
     <h3>Explanatory Notes</h3>
     <p class='highlight'>Page 1: EP System Performance Adults V4 2025</p>
 
@@ -88,8 +81,7 @@
 
 <h2 class="eprase-h2">Paediatric Patients Report</h2>
 <div class="accordion-text">
-    <!-- <iframe title="ePRaSE Results Charts V4 Paediatrics 25 - Anonymised (publish) final" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=c50839c3-fdc9-4288-83b5-9821bd641daa" frameborder="0" allowFullScreen="true"></iframe> -->
-    <p>An interactive Power BI report is coming soon.</p>
+    <iframe title="ePRaSE Results Charts V4 Paediatrics 25 - Anonymised (publish) final" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYWEzMDg0ZDMtYjdjNy00Mzk5LWI1MjEtNjVkZDcwZjdiODk0IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
     <h3>Explanatory Notes</h3>
     <p class='highlight'>Page 1: EP System Performance</p>
 
