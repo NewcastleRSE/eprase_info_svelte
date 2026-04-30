@@ -8,6 +8,12 @@
   <h1 class="report-h1" in:fly={{ x: -50, duration: 800, delay: 400 }}>
     Results 2025
   </h1>
+  <div class="alert-text">
+    <p><strong>Update on Interactive Reports</strong></p>
+    <p>The interactive Power BI reports for 2025 results will be available here soon. 
+      Due to technical issues, there's a short delay, sorry about that. We'll email 
+      users as soon as it's live, or please check back next week for an update.</p>
+  </div>
   <div class="accordion-text">
     <p>
       The 2025 ePRaSE assessment cycle assessed the performance of electronic prescribing systems across 109 adult assessments (107 trusts) and 39 paediatric assessments (39 trusts), spanning 19 EPMA systems. This represents a comprehensive national snapshot to date of prescribing safety mitigation in English NHS digital systems. The findings reported at the 22nd April 2026 Masterclass and below, suggest that improvement in electronic prescribing safety is achievable and observable, particularly for high risk medicines, but that local configuration underpinned by leadership and system update cadence, are the primary drivers of performance. The results reinforce the need for close collaboration between users and vendors.
@@ -129,5 +135,14 @@
 <style>
     .highlight {
         color: rgb(67, 67, 158);
+    }
+    .alert-text {
+      border: 1px solid rgb(67, 67, 158);
+      border-radius: 20px;
+      background-color: rgba(67,67,158,0.1);
+      text-align: center;
+      width: 50%;
+      margin: auto;
+      padding: 0 2rem;
     }
 </style>
