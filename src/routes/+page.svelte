@@ -20,7 +20,7 @@
 			<div class="w3-card w3-container" style="min-height:350px">
 		   <h3>Results</h3><br>
 			<i class="fa fa-line-chart  w3-margin-bottom eprase-icons" style="font-size:120px"></i>
-			<p>Report from the 2024 ePRaSE Assessment Exercise</p>
+			<p>Reports from ePRaSE Assessment Exercises</p>
 			</div>
 	  	</div></a>
 </div>
