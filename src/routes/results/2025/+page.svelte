@@ -128,13 +128,4 @@
     .highlight {
         color: rgb(67, 67, 158);
     }
-    .alert-text {
-      border: 1px solid rgb(67, 67, 158);
-      border-radius: 20px;
-      background-color: rgba(67,67,158,0.1);
-      text-align: center;
-      width: 50%;
-      margin: auto;
-      padding: 0 2rem;
-    }
 </style>
