@@ -35,7 +35,7 @@
   </div>
 
 <h2 class='eprase-h2'>V4 2025 Result Explanatory Notes</h2>
-    <h3>Adult Power BI Report</h3>
+    <h3 class='eprase-h3'>Adult Power BI Report</h3>
       <div class="accordion-text">
           <iframe title="Anonymized ePRaSE Adult Results Charts" width="600" height="373.5" src={"https://app.powerbi.com/view?r=" + adultCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
 
@@ -80,7 +80,7 @@
           <p>This slide shows mixed results within EP systems suggesting that some trusts may not recognise their system's capability to meet the Antimicrobial Review Kit (ARK) requirements.</p>
       </div>
 
-    <h3>Paediatric Power BI Report</h3>
+    <h3 class='eprase-h3'>Paediatric Power BI Report</h3>
       <div class="accordion-text">
         <iframe title="Anonymized ePRaSE Paediatric Results Charts" width="600" height="373.5" src={"https://app.powerbi.com/view?r=" + pedCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
 
