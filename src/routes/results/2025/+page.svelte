@@ -35,7 +35,7 @@
   </div>
 
 <h2 class='eprase-h2'>V4 2025 Result Explanatory Notes</h2>
-    <h3 class="eprase-h3">Adult Power BI Report</h3>
+    <h3>Adult Power BI Report</h3>
       <div class="accordion-text">
           <iframe title="Anonymized ePRaSE Adult Results Charts" width="600" height="373.5" src={"https://app.powerbi.com/view?r=" + adultCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
 
@@ -47,7 +47,7 @@
 
           <p class='popup'>*Note the staff average on the summary dashboard is an average of all 109 results; users wishing to see the number of staff data for a particular system can use the system filter to isolate that information.</p>
 
-          <p class='highlight'>Page 2: Good Mitigation Scores Adult V4 2025</p>
+          <p class='highlight'>Page 2: Good Mitigation Scores Adults V4 2025</p>
 
           <p>This interactive chart shows the placement of each of the trusts participating in the assessment for 2025. The results are in descending order based on good mitigation scores which is the percentage of potentially unsafe prescription orders that were correctly mitigated. By filtering the data using the dropdown menus at the top of the report or using the colour coded legend circles, users can see there is wide variation in mitigation performance between trusts using the same system. Results strongly suggest there are opportunities for improvement in safety through learning from others' system optimisation.</p>
 
@@ -61,26 +61,26 @@
 
           <p>More recent updates correlate with marginally better mitigation, stressing the value of consistent update cycles.</p>
 
-          <p>The data suggests an optimal update cycle of 15–20 months, acknowledging that there are many different types of updates.</p>
+          <p>The data suggests an optimal update cycle of 15-20 months, acknowledging that there are many different types of updates.</p>
 
           <p>Sustaining good mitigation requires combining periodic updates with ongoing oversight and review activities.</p>
 
-          <p class='highlight'>Page 5: Is Your Hospital Laboratory Results System Fully Integrated with Your ePrescribing System? Adult V4 2025</p>
+          <p class='highlight'>Page 5: Is Your Hospital Laboratory Results System Fully Integrated with Your ePrescribing System? Adults V4 2025</p>
 
           <p>This chart shows a mixed picture of laboratory and EP system integration between different EP systems and within the same system. For users, data integration is a safety enabler. Limited access to diagnoses and laboratory results in clinical decision support, constrains mitigation potential.</p>
 
-          <p class='highlight'>Page 6: How Do You Describe Penicillin V in Your EP System? Adult V4 2025</p>
+          <p class='highlight'>Page 6: How Do You Describe Penicillin V in Your EP System? Adults V4 2025</p>
 
           <p>This static chart addresses nationally reported issues around the mis-selection risk (Penicillin vs Penicillamine). Results suggests some improvement - there has been a reduction in the use of Penicillin V between V3 and V4 of ePRaSE. The Approved dm+d name that should be used is Phenoxymethylpenicillin.</p>
 
-          <p class='highlight'>Page 7: Can You Enter Patient Diagnosis and Comorbidities? Adult V4 2025</p>
+          <p class='highlight'>Page 7: Can You Enter Patient Diagnosis and Comorbidities? Adults V4 2025</p>
           <p>This chart shows a mixed picture of systems able to enter and link diagnosis and comorbidities both between different EP systems and within the same system. For users, data integration is a safety enabler. Limited access to diagnoses and comorbidities results in clinical decision support, constrains mitigation potential.</p>
 
-          <p class='highlight'>Page 8: Does your EPMA system have a mechanism in place to automatically identify antimicrobial prescriptions that have reached the review time window e.g. 48-72 hours after initiation? Adult V4 2025</p>
+          <p class='highlight'>Page 8: Does your EPMA system have a mechanism in place to automatically identify antimicrobial prescriptions that have reached the review time window e.g. 48-72 hours after initiation? Adults V4 2025</p>
           <p>This slide shows mixed results within EP systems suggesting that some trusts may not recognise their system's capability to meet the Antimicrobial Review Kit (ARK) requirements.</p>
       </div>
 
-    <h3 class="eprase-h3">Paediatric Power BI Report</h3>
+    <h3>Paediatric Power BI Report</h3>
       <div class="accordion-text">
         <iframe title="Anonymized ePRaSE Paediatric Results Charts" width="600" height="373.5" src={"https://app.powerbi.com/view?r=" + pedCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
 
@@ -126,6 +126,9 @@
     </div>
 </div>
 <style>
+  h3 {
+
+  }
     .highlight {
         color: rgb(67, 67, 158);
     }
