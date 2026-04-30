@@ -66,6 +66,7 @@
     :global(.eprase-h1) {font-size: 2.5em; color: #1e2a71; margin-left: 5%; position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
     :global(.report-h1) {font-size: 2.5em; color: #1e2a71; margin-left: 5%; position:relative;}
     :global(.eprase-h2) {font-size: 1.8em; color: #3e53cc; font-style: italic; margin-left: 15%}
+    :global(.eprase-h3) {font-size: 1.6em; color: #1e2a71; width: 60%; margin: 1.5rem auto; }
     .navbar {
         padding: 0; 
         width: 100%;

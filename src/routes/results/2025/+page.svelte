@@ -1,5 +1,7 @@
 <script>
   import { fade, fly } from 'svelte/transition';
+  let adultCode = 'eyJrIjoiMDlkMTQxZjItY2UwZS00ZDdlLTk5OWItNzkwM2JmMmVlNmE2IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9';
+  let pedCode = 'eyJrIjoiYWEzMDg0ZDMtYjdjNy00Mzk5LWI1MjEtNjVkZDcwZjdiODk0IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9';
 </script>
 
 <div in:fade={{ duration: 400, delay: 200 }} out:fade={{ duration: 200 }}>
@@ -32,8 +34,8 @@
     </ul>
   </div>
 
-<h2>V4 2025 Result Explanatory Notes</h2>
-    <h3 class="eprase-h2">Adult Power BI Report</h3>
+<h2 class='eprase-h2'>V4 2025 Result Explanatory Notes</h2>
+    <h3 class="eprase-h3">Adult Power BI Report</h3>
       <div class="accordion-text">
           <iframe title="Anonymized ePRaSE Adult Results Charts" width="600" height="373.5" src={"https://app.powerbi.com/view?r=" + adultCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
 
@@ -78,7 +80,7 @@
           <p>This slide shows mixed results within EP systems suggesting that some trusts may not recognise their system's capability to meet the Antimicrobial Review Kit (ARK) requirements.</p>
       </div>
 
-    <h3 class="eprase-h2">Paediatric Power BI Report</h3>
+    <h3 class="eprase-h3">Paediatric Power BI Report</h3>
       <div class="accordion-text">
         <iframe title="Anonymized ePRaSE Paediatric Results Charts" width="600" height="373.5" src={"https://app.powerbi.com/view?r=" + pedCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
 
