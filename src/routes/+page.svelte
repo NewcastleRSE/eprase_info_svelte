@@ -16,7 +16,7 @@
   			</div>
 		</div></a>
 
-		<a href="/results"><div class="col col-4 clickable">
+		<a href="/results/2025"><div class="col col-4 clickable">
 			<div class="w3-card w3-container" style="min-height:350px">
 		   <h3>Results</h3><br>
 			<i class="fa fa-line-chart  w3-margin-bottom eprase-icons" style="font-size:120px"></i>
