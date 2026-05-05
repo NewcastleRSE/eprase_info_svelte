@@ -3,6 +3,16 @@
   let adultCode = 'eyJrIjoiMDlkMTQxZjItY2UwZS00ZDdlLTk5OWItNzkwM2JmMmVlNmE2IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9';
   let pedCode = 'eyJrIjoiYWEzMDg0ZDMtYjdjNy00Mzk5LWI1MjEtNjVkZDcwZjdiODk0IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9';
 </script>
+<svelte:head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9H952DXLHJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9H952DXLHJ');
+    </script>
+</svelte:head>
 
 <div in:fade={{ duration: 400, delay: 200 }} out:fade={{ duration: 200 }}>
   <h1 class="report-h1" in:fly={{ x: -50, duration: 800, delay: 400 }}>
