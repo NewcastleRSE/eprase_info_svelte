@@ -9,7 +9,7 @@
         { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },
         { name: 'Using ePRaSE', path: '/using' },
-        { name: 'Results', path: '/results' },
+        { name: 'Results', path: '/results/2025' },
         { name: 'News', path: '/news' },
         { name: 'Learning Lab', path: '/lab' },
         { name: 'FAQ', path: '/faq' }
