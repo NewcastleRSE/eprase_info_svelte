@@ -34,8 +34,9 @@
   <h2>V4 2025 Result Explanatory Notes</h2>
     <h3 class="eprase-h2">Adult Power BI Report</h3>
       <div class="accordion-text">
+          <div class="report-container">
           <iframe title="ePRaSE Results Charts v4 Adults final" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiMTBhMzE4NTQtMmZmZi00NjNlLWJkNmUtZTg0YTVmMWUwYjM1IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-
+          </div>
           <p class='highlight'>Page 1: EP System Performance Adults V4 2025</p>
 
           <p>This dashboard provides a summary of the number of trusts completing the assessment, data on the overall mitigation performance across all questions and mandatory questions and average numbers of staff{@render footnote("Note the staff average on the summary dashboard is an average of all 109 results; users wishing to see the number of staff data for a particular system can use the system filter to isolate that information.")} that users told us were involved in maintaining their trust EP system. Users can sort the information to benchmark their performance within EP system type using the NHS Trust and system filters on the righthand side of the dashboard using their unique trust and system ID reference numbers.</p>
@@ -77,8 +78,9 @@
 
     <h3 class="eprase-h2">Paediatric Power BI Report</h3>
       <div class="accordion-text">
+        <div class="report-container">
         <iframe title="ePRaSE Results Charts V4 Paediatrics 25 - final" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiOGEwMTljNjUtZGZlYi00MzZjLTlmZDEtMDIyNTJmYTk2NjkwIiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-
+        </div>
         <p class='highlight'>Page 1: EP System Performance Paediatrics V4 2025</p>
 
         <p>2025 is the first year for paediatric specific questions and results should be understood as a learning phase. This dashboard provides a summary of the number of trusts completing the assessment, data on the overall mitigation performance across all questions, mandatory questions and average numbers of staff{@render footnote("Note the average on the summary dashboard is an average of all 39 results; users wishing to see the number of staff data for a particular system can use the system filter to isolate that information.")} that users told us where involved in maintaining their trust EP system. Users can sort the information to benchmark their performance within EP system type using the NHS trust and system filter on the righthand side of the dashboard using their unique trust and system ID reference numbers.</p>
@@ -123,13 +125,27 @@
         color: rgb(67, 67, 158);
     }
 
+    .report-container {
+        width: 100%;
+        max-width: 1024px; /* The client's magic number */
+        margin: 2rem auto;
+        aspect-ratio: 16 / 9; /* Keeps it crisp */
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
     .tooltip-box {
         visibility: hidden;
         width: 400px;
         max-width: 90vw;
         background-color: var(--nhs-dark-blue);
         color: #fff;
-        text-align: center;
+        text-align: left;
         border-radius: 6px;
         padding: 8px;
         position: absolute;
@@ -145,6 +161,7 @@
         left: 120%; /* Position to the right of the 'i' */
         top: 130%;
         transform: translateY(-50%);
+        box-sizing: border-box;
     }
 
     .tooltip-box::after {
