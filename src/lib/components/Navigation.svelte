@@ -1,5 +1,6 @@
 <script>
     import { page } from '$app/state';
+	import { linkSync } from 'fs';
     let isMenuOpen = $state(false);
     const toggleMenu = () => isMenuOpen = !isMenuOpen;
     const closeMenu = () => isMenuOpen = false;
@@ -22,14 +23,14 @@
 </script>
 <nav id="topnav">
     <div class="logo-area">
-        <a href="/"><img src="/img/classic_logo.png" alt="EPRASE Logo"></a>
+        <a href="/"><img src="/img/epraseLogo.png" alt="EPRASE Logo"></a>
     </div>
     <div class="nav-stack">
         <div class="logo-row">
             <img src="/img/nhs.png" class="nhs" alt="NHS"/>
         </div>
         <div class="nav-row top-row desktop-only">
-            {#each topLinks as link}
+            {#each topLinks as link (link.path)}
                 <a 
                     href={link.path} 
                     class:active={page.url.pathname.replace(/\/$/, '') === link.path.replace(/\/$/, '')}
@@ -41,15 +42,19 @@
             </div>
         <hr class="nav-divider desktop-only">
         <div class="nav-row bottom-row desktop-only">
-            {#each bottomLinks as link}
+            {#each bottomLinks as link (link.path)}
+                {@const currentSection = page.url.pathname.split('/')[1]} 
+                {@const linkSection = link.path.split('/')[1]}
+                {@const isActive = currentSection === linkSection}
+
                 <a 
                     href={link.path} 
-                    class:active={page.url.pathname.replace(/\/$/, '') === link.path.replace(/\/$/, '')}
-                    aria-current={page.url.pathname.replace(/\/$/, '') === link.path.replace(/\/$/, '') ? 'page' : undefined}
+                    class:active={isActive}
+                    aria-current={isActive ? 'page' : undefined}
                 >
                     {link.name}
                 </a>
-            {/each} 
+            {/each}
         </div>
         <button class="burger mobile-only" onclick={toggleMenu} aria-label="Toggle Menu">
             <span class:open={isMenuOpen}></span>
@@ -59,7 +64,7 @@
     </div>
 
     <div class="mobile-menu" class:open={isMenuOpen}>
-        {#each allLinks as link}
+        {#each allLinks as link (link.path)}
             <a href={link.path} onclick={closeMenu} class:active={isActive(link.path)}>
                 {link.name}
             </a>
@@ -133,7 +138,6 @@
         color: #fff;
     }
 
-    /* Adjusting the top-row base size to match your design */
     .top-row a {
         font-size: 1rem;
         opacity: 0.9;

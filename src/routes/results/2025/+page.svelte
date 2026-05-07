@@ -33,7 +33,7 @@
   <h2>V4 2025 Result Explanatory Notes</h2>
     <h3 class="eprase-h2">Adult Power BI Report</h3>
       <div class="accordion-text">
-          <iframe title="Anonymized ePRaSE Adult Results Charts" width="600" height="373.5" src={"https://app.powerbi.com/view?r=" + adultCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
+          <iframe title="ePRaSE Results Charts v4 Adults final" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiMTBhMzE4NTQtMmZmZi00NjNlLWJkNmUtZTg0YTVmMWUwYjM1IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
           <p class='highlight'>Page 1: EP System Performance Adults V4 2025</p>
 
@@ -78,7 +78,7 @@
 
     <h3 class="eprase-h2">Paediatric Power BI Report</h3>
       <div class="accordion-text">
-        <iframe title="Anonymized ePRaSE Paediatric Results Charts" width="600" height="373.5" src={"https://app.powerbi.com/view?r=" + pedCode} allowFullScreen="true" style="border: 1px solid #999;"></iframe>
+        <iframe title="ePRaSE Results Charts V4 Paediatrics 25 - final" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiOGEwMTljNjUtZGZlYi00MzZjLTlmZDEtMDIyNTJmYTk2NjkwIiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
         <p class='highlight'>Page 1: EP System Performance Paediatrics V4 2025</p>
 
