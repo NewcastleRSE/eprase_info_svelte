@@ -1,3 +1,7 @@
+<script>
+  import { resolve } from '$app/paths';
+</script>
+
 {#snippet footnote(text)}
 		<span class="info-trigger" role="button" tabindex="0">
         <span class="info-icon">i</span>
@@ -23,10 +27,10 @@
     </p>
     <ul>
       <li>
-        <a href="/using">User experience video</a>: Responding to ePRaSE, Andrew Heed
+        <a href={resolve("/using")} class="linelink">User experience video</a>: Responding to ePRaSE, Andrew Heed
       </li>
       <li>
-        <a href="/lab">Electronic Prescribing Learning Lab</a>: An interactive resource designed to help digital and pharmacy teams optimise their electronic prescribing systems.
+        <a href={resolve("/lab")} class="linelink">Electronic Prescribing Learning Lab</a>: An interactive resource designed to help digital and pharmacy teams optimise their electronic prescribing systems.
       </li>
     </ul>
   </div>
@@ -35,7 +39,7 @@
     <h3 class="eprase-h2">Adult Power BI Report</h3>
       <div class="accordion-text">
           <div class="report-container">
-          <iframe title="ePRaSE Results Charts v4 Adults final" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiMTBhMzE4NTQtMmZmZi00NjNlLWJkNmUtZTg0YTVmMWUwYjM1IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+            <iframe title="ePRaSE Results Charts v4 Adults final" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiMTBhMzE4NTQtMmZmZi00NjNlLWJkNmUtZTg0YTVmMWUwYjM1IiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
           </div>
           <p class='highlight'>Page 1: EP System Performance Adults V4 2025</p>
 
@@ -79,7 +83,7 @@
     <h3 class="eprase-h2">Paediatric Power BI Report</h3>
       <div class="accordion-text">
         <div class="report-container">
-        <iframe title="ePRaSE Results Charts V4 Paediatrics 25 - final" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiOGEwMTljNjUtZGZlYi00MzZjLTlmZDEtMDIyNTJmYTk2NjkwIiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+          <iframe title="ePRaSE Results Charts V4 Paediatrics 25 - final" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiOGEwMTljNjUtZGZlYi00MzZjLTlmZDEtMDIyNTJmYTk2NjkwIiwidCI6IjljNTAxMmM5LWI2MTYtNDRjMi1hOTE3LTY2ODE0ZmJlM2U4NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
         </div>
         <p class='highlight'>Page 1: EP System Performance Paediatrics V4 2025</p>
 

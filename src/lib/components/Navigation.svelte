@@ -1,6 +1,7 @@
 <script>
     import { page } from '$app/state';
-	import { linkSync } from 'fs';
+    import { resolve } from '$app/paths';
+
     let isMenuOpen = $state(false);
     const toggleMenu = () => isMenuOpen = !isMenuOpen;
     const closeMenu = () => isMenuOpen = false;
@@ -23,7 +24,7 @@
 </script>
 <nav id="topnav">
     <div class="logo-area">
-        <a href="/"><img src="/img/epraseLogo.png" alt="EPRASE Logo"></a>
+        <a href={resolve("/")}><img src="/img/epraseLogo.png" alt="EPRASE Logo"></a>
     </div>
     <div class="nav-stack">
         <div class="logo-row">
@@ -32,7 +33,7 @@
         <div class="nav-row top-row desktop-only">
             {#each topLinks as link (link.path)}
                 <a 
-                    href={link.path} 
+                    href={resolve(link.path)} 
                     class:active={page.url.pathname.replace(/\/$/, '') === link.path.replace(/\/$/, '')}
                     aria-current={page.url.pathname.replace(/\/$/, '') === link.path.replace(/\/$/, '') ? 'page' : undefined}
                 >
@@ -48,7 +49,7 @@
                 {@const isActive = currentSection === linkSection}
 
                 <a 
-                    href={link.path} 
+                    href={resolve(link.path)} 
                     class:active={isActive}
                     aria-current={isActive ? 'page' : undefined}
                 >
@@ -65,7 +66,7 @@
 
     <div class="mobile-menu" class:open={isMenuOpen}>
         {#each allLinks as link (link.path)}
-            <a href={link.path} onclick={closeMenu} class:active={isActive(link.path)}>
+            <a href={resolve(link.path)} onclick={closeMenu} class:active={isActive(link.path)}>
                 {link.name}
             </a>
         {/each}

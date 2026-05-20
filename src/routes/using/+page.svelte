@@ -1,9 +1,12 @@
+<script>
+	import { resolve } from '$app/paths';
+</script>
 <div class="subpage">
 	<div class="accordion-text">
 		<!-- <img class="eprase-image" src="img/notes.jpg" alt="stock image" /> -->
 		<ul>
 			<li>Step-by-step instructions for using the ePRaSE tool can be found 
-			in <a class="eprase-link" target="_blank" href="/pdf/EpraseUserGuide2025.pdf" title="User Guide PDF">this PDF file</a>.</li>
+			in <a class="linelink" target="_blank" href={resolve("/pdf/EpraseUserGuide2025.pdf")} title="User Guide PDF">this PDF file</a>.</li>
 			<li>Watch a user experience video from Newcastle Hospitals Andrew Head, 
 				Lead Pharmacist for Clinical Informatics, on how to interpret and 
 				respond to your ePRaSE assessment results.
@@ -35,7 +38,7 @@
 				</div>
 			</li>
 			<li>Watch the Masterclass October launch presentation (you will need a futures account to do this): 
-			<a class="eprase-link" target="_blank" href="https://future.nhs.uk/MedsOPDigitalLN/view?objectId=67058192" title="ePrescribing Masterclass October 2025">ePrescribing Masterclass October 2025 - Medicines Optimisation Digital Learning Network - Futures</a></li>
+			<a class="linelink" target="_blank" href="https://future.nhs.uk/MedsOPDigitalLN/view?objectId=67058192" title="ePrescribing Masterclass October 2025">ePrescribing Masterclass October 2025 - Medicines Optimisation Digital Learning Network - Futures</a></li>
 			<li>Watch a user experience video from Liverpool's Sarah Thompson: 
 				<div class="eprase-video">
 					<div class="iframe-aspect-wrapper">

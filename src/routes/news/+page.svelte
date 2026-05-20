@@ -1,11 +1,14 @@
+<script>
+  import { resolve } from '$app/paths';
+</script>
 <div class="subpage">
   <p>Results from Version 4 (2025) of the Electronic Prescribing Risk and Safety Evaluation (ePRaSE) tool are now available as interactive, anonymised Power BI reports on the Results 2025 page of the ePRaSE website. Trusts that completed the 2025 assessment have been emailed unique identification numbers, enabling benchmarking against other trusts using the same electronic prescribing (EP) system. Explanatory notes are provided to support interpretation of the data.</p>
 
   <p>To support interpretation and response to your ePRaSE results, we recommend the following resources:</p>
 
   <ul>
-    <li><a href="/using">User experience video</a>: Responding to ePRaSE, Andrew Heed</li>
-    <li><a href="/lab">Electronic Prescribing Learning Lab</a>: An interactive resource designed to help digital and pharmacy teams optimise their electronic prescribing systems.</li>
+    <li><a href={resolve("/using")} class="linelink">User experience video</a>: Responding to ePRaSE, Andrew Heed</li>
+    <li><a href={resolve("/lab")} class="linelink">Electronic Prescribing Learning Lab</a>: An interactive resource designed to help digital and pharmacy teams optimise their electronic prescribing systems.</li>
   </ul>
 
   <p>The Learning Lab is an interactive resource designed to help digital and pharmacy teams optimise their electronic prescribing systems.</p>

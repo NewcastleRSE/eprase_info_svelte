@@ -1,7 +1,10 @@
+<script>
+	import {resolve} from '$app/paths';
+</script>
 
 <div class="subpage">
 
-<p class='topquote'>&quot;Know your risk: an NHS self‑assessment for safer ePrescribing.&quot;</p>
+<p class='topquote'>&quot;Know your risk: an NHS self-assessment for safer ePrescribing.&quot;</p>
 
 <h2>What is ePRaSE?</h2>
 
@@ -28,8 +31,8 @@
 <p>To support interpretation of results and next steps in the optimisation journey, trusts can access:</p>
 
 <ul>
-	<li><a href="/using">User experience video</a>: Responding to ePRaSE – Andrew Heed</li>
-	<li><a href="/lab">Electronic Prescribing Learning Lab</a>: An interactive resource designed to help digital and pharmacy teams optimise their electronic prescribing systems</li>
+	<li><a href={resolve("/using")} class="linelink">User experience video</a>: Responding to ePRaSE – Andrew Heed</li>
+	<li><a href={resolve("/lab")} class="linelink">Electronic Prescribing Learning Lab</a>: An interactive resource designed to help digital and pharmacy teams optimise their electronic prescribing systems</li>
 </ul>
 
 <h2>Who can use ePRaSE?</h2>
@@ -46,9 +49,9 @@
 
 <h2>Background</h2>
 
-<p>Electronic prescribing with clinical decision support can reduce medication errors as systems are optimised and users gain experience, but system changes and local variation can introduce new safety risks that are hard to detect. In the UK, ePRaSE was commissioned by NHS England to address the lack of a standard way to evaluate how well ePrescribing systems prevent harm, supporting continuous improvement and optimisation. Since its pilot in 2019, ePRaSE has shown that gaps remain. Early findings indicated only around half of high-risk prescribing scenarios were effectively mitigated, reinforcing the need for ongoing assessment and shared learning. Further details can be found in the open access publication Klein, S., Tsanas, A., Coleman, J. et al. A simulation study to quantitatively assess the performance of electronic prescribing systems in English NHS Hospital Trusts. <em>Sci Rep</em> 15, 1756 (2025). <a href="https://doi.org/10.1038/s41598-025-86112-w">https://doi.org/10.1038/s41598-025-86112-w</a></p>
+<p>Electronic prescribing with clinical decision support can reduce medication errors as systems are optimised and users gain experience, but system changes and local variation can introduce new safety risks that are hard to detect. In the UK, ePRaSE was commissioned by NHS England to address the lack of a standard way to evaluate how well ePrescribing systems prevent harm, supporting continuous improvement and optimisation. Since its pilot in 2019, ePRaSE has shown that gaps remain. Early findings indicated only around half of high-risk prescribing scenarios were effectively mitigated, reinforcing the need for ongoing assessment and shared learning. Further details can be found in the open access publication Klein, S., Tsanas, A., Coleman, J. et al. A simulation study to quantitatively assess the performance of electronic prescribing systems in English NHS Hospital Trusts. <em>Sci Rep</em> 15, 1756 (2025). <a class="linelink" href="https://doi.org/10.1038/s41598-025-86112-w">https://doi.org/10.1038/s41598-025-86112-w</a></p>
 
-<p>Recent campaign results for 2024 and 2025 can be found on the <a href="/results">Results page</a> of this website.</p>
+<p>Recent campaign results for 2024 and 2025 can be found on the <a href={resolve("/results")} class="linelink">Results page</a> of this website.</p>
 
 </div>
 <style>
