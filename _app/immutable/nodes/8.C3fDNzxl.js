@@ -1,0 +1,1 @@
+import"../chunks/DsnmJJEf.js";import"../chunks/DQn10oNn.js";import{o as t}from"../chunks/ClJAR1Fx.js";import{p as r,e as p}from"../chunks/D3vv9Ol8.js";import{i as a}from"../chunks/DUtjUG_X.js";import{g as m}from"../chunks/CgeW5dP1.js";function g(e,o){r(o,!1),t(()=>{m("/results/2025",{replaceState:!0})}),a(),p()}export{g as component};
