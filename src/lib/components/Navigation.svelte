@@ -355,11 +355,16 @@
             padding: 10px 0;
             border-bottom: 2px solid #eff3fb;
             transform: translateY(-150%);
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            z-index: -1;
+            z-index: 2000;
+            visibility: hidden;
+            pointer-events: none;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-        .mobile-menu.open { transform: translateY(0); }
+        .mobile-menu.open { transform: translateY(0);
+            visibility: visible;
+            pointer-events: auto; 
+        }
         
         .mobile-menu :global(a), .accordion-toggle, .accordion-sub-toggle {
             padding: 14px 24px;
