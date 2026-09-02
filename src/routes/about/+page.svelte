@@ -1,64 +1,251 @@
-<h1 class="eprase-h1 w3-animate-left">About ePRaSE</h1>
-<p class='topquote'>&quot;Know your risk: an NHS self‑assessment for safer ePrescribing.&quot;</p>
+<script>
+    import { resolve } from '$app/paths';
 
-<h2 class="eprase-h2">What is ePRaSE?</h2>
-<div class='accordion-text'>
-    <img class="eprase-image" src="/img/e_molecule.jpg" alt="electronic medicine" />
-    <p>The Electronic Prescribing Risk and Safety Evaluation (ePRaSE) is an NHS-led web-based self-assessment tool that helps trusts understand how well their electronic prescribing (EP) systems are configured and maintained to mitigate known prescribing risks.</p>
+    // Track modal state for lightbox
+    let isEnlarged = $state(false);
 
-    <p>ePRaSE allows organisations to view their own results immediately to identify potential areas of prescribing risk, and at the end of each annual campaign to benchmark performance against national data. We collaborate with both users and system vendors using aggregated findings from each annual campaign to support shared learning and EP system optimisation across the NHS.</p>
+    function toggleZoom() {
+        isEnlarged = !isEnlarged;
+    }
+</script>
 
-    <p>Why take part?</p>
-    <ul>
-      <li>Medicines are one of the highest-volume sources of reported patient-safety incidents.</li>
-      <li>ePRaSE provides a structured, evidence-based assessment of how effectively EP systems may prevent high-risk prescribing errors.</li>
-      <li>Trusts receive trust-level reports and national benchmarking to support prioritisation and investment.</li>
-      <li>The latest release includes paediatric-specific prescribing scenarios, supporting assessment in this higher-risk area of care.</li>
-    </ul>
+<div class="subpage">
 
-    <p>In short, ePRaSE supports proactive risk reduction and continuous improvement in both adult and paediatric prescribing.</p>
+<blockquote class="endorsement-quote">
+    <p>“Repeat measurement drives quality improvement, so participation in ePRaSE must become routine practice.”</p>
+    <cite>
+        <strong>Alec Price-Forbes</strong>
+        <span>National Chief Clinical Information Officer (CCIO), NHS England</span>
+    </cite>
+</blockquote>
+
+<h2>What is ePRaSE?</h2>
+
+<p>The Electronic Prescribing Risk and Safety Evaluation (ePRaSE) is an NHS-led web-based self-assessment tool that helps trusts understand how well their ePrescribing (EP) systems are configured and maintained to mitigate known prescribing risks.</p>
+
+<p>ePRaSE allows organisations to view their own results immediately to identify potential areas of prescribing risk, and at the end of each annual campaign to benchmark performance against national data.</p>
+
+<h2>The ePRaSE Cycle</h2>
+<p>The ePRaSE assessment process is cyclical, allowing for continuous evaluation, interpretation, and improvement in ePrescribing practices.</p>
+
+<section class="cycle-container">
+    <p class="section-lead">An annual 4-stage process driving continuous system assessment and national benchmarking.</p>
+
+    <figure class="diagram-card">
+        <button type="button" class="image-zoom-trigger" onclick={toggleZoom} aria-label="Expand ePRaSE cycle diagram">
+            <img src="{resolve('/img/cycle.webp')}" alt="Diagram showing the 4-stage ePRaSE cycle: Deploy, Perform, Assess, and Benchmark." />
+            <span class="zoom-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                Click to expand
+            </span>
+        </button>
+        <figcaption>Figure 1. The annual cycle of continuous evaluation and system optimization.</figcaption>
+    </figure>
+</section>
+
+<!-- LIGHTBOX MODAL OVERLAY -->
+{#if isEnlarged}
+<div 
+    class="lightbox-overlay" 
+    onclick={toggleZoom}
+    onkeydown={(e) => e.key === 'Escape' && toggleZoom()}
+    role="button"
+    tabindex="0"
+    aria-label="Close modal overlay"
+>
+    <!-- Inner dialog box (div stops propagation so clicking the image doesn't close modal) -->
+    <div 
+        class="lightbox-content" 
+        onclick={(e) => e.stopPropagation()} 
+        onkeydown={(e) => e.stopPropagation()}
+        role="dialog" 
+        aria-modal="true" 
+        aria-label="Enlarged diagram view"
+        tabindex="-1"
+    >
+        <button type="button" class="close-btn" onclick={toggleZoom} aria-label="Close modal">✕</button>
+        <img src="{resolve('/img/cycle.webp')}" alt="ePRaSE cycle diagram detailed view" />
+    </div>
 </div>
+{/if}
 
-<h2 class='eprase-h2'>How the tool works</h2>
-<div class="accordion-text">
-  <p>Trusts are asked to set up a series of fictional patients within their live or test EP environment and complete a structured set of prescribing risk scenarios designed to challenge system safeguards. The tool also includes targeted questions on core safety configuration. Results are generated in real time through an actionable report, supported by visual outputs, to guide optimisation for both established users and new system implementers.</p>
-</div>
-
-<h2 class='eprase-h2'>Help and support</h2>
-<div class="accordion-text">
-  <p>To support interpretation of results and next steps in the optimisation journey, trusts can access:</p>
-
-  <ul>
-    <li><a href="/using">User experience video</a>: Responding to ePRaSE – Andrew Heed</li>
-    <li><a href="/lab">Electronic Prescribing Learning Lab</a>: An interactive resource designed to help digital and pharmacy teams optimise their electronic prescribing systems</li>
-  </ul>
-</div>
-
-<h2 class='eprase-h2'>Who can use ePRaSE?</h2>
-<div class="accordion-text">
-<ul>
-	<li>Suitable for acute, community, and mental health NHS trusts using or implementing electronic prescribing.</li>
-	<li>Includes ability to assess multiple different inpatient EP systems.</li>
-	<li>Includes a dedicated paediatric-prescribing safety module.</li>
-	<li>Access requires an NHS email address and HSCN connectivity (England or dedicated link for devolved nations).</li>
-	<li>Up to four users per trust can register to complete or view the assessment.</li>
+<h2>Why take part?</h2>
+<ul class="feature-list">
+    <li><strong>High-volume risks:</strong> Medicines are one of the highest-volume sources of reported patient-safety incidents.</li>
+    <li><strong>Structured evaluation:</strong> ePRaSE provides a structured, evidence-based assessment of how effectively EP systems may prevent high-risk prescribing errors.</li>
+    <li><strong>Benchmarking & priorities:</strong> Trusts receive trust-level reports and national benchmarking to support prioritisation and investment.</li>
+    <li><strong>Paediatric coverage:</strong> The latest release includes paediatric-specific prescribing scenarios, supporting assessment in this higher-risk area of care.</li>
 </ul>
-
-<p>The ePRaSE application is compatible with all modern web browsers.</p>
-</div>
-
-<h2 class="eprase-h2">Background</h2>
-<div class='accordion-text'>
-  <p>Electronic prescribing with clinical decision support can reduce medication errors as systems are optimised and users gain experience, but system changes and local variation can introduce new safety risks that are hard to detect. In the UK, ePRaSE was commissioned by NHS England to address the lack of a standard way to evaluate how well ePrescribing systems prevent harm, supporting continuous improvement and optimisation. Since its pilot in 2019, ePRaSE has shown that gaps remain. Early findings indicated only around half of high-risk prescribing scenarios were effectively mitigated, reinforcing the need for ongoing assessment and shared learning. Further details can be found in the open access publication Klein, S., Tsanas, A., Coleman, J. et al. A simulation study to quantitatively assess the performance of electronic prescribing systems in English NHS Hospital Trusts. <em>Sci Rep</em> 15, 1756 (2025). <a href="https://doi.org/10.1038/s41598-025-86112-w">https://doi.org/10.1038/s41598-025-86112-w</a></p>
-
-<p>Recent campaign results for 2024 and 2025 can be found on the <a href="/results">Results page</a> of this website.</p>
 
 </div>
 
 <style>
-	.topquote {
-		font-size: 1.4rem;
-    font-weight: bold;
-		text-align: center;
-	}
+    /* Container styling for the section */
+    .cycle-container {
+        margin: 2.5rem 0;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 1.75rem;
+    }
+
+    .section-lead {
+        margin-top: -0.5rem;
+        margin-bottom: 1.5rem;
+        color: #4c6272;
+        font-size: 1.05rem;
+    }
+
+    /* Card holding the image */
+    .diagram-card {
+        margin: 0;
+        background: #ffffff;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Trigger / Zoom overlay button */
+    .image-zoom-trigger {
+        position: relative;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        width: 100%;
+        max-width: 650px;
+        border-radius: 6px;
+        overflow: hidden;
+        display: block;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .image-zoom-trigger:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 94, 184, 0.15);
+    }
+
+    .image-zoom-trigger img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .zoom-badge {
+        position: absolute;
+        bottom: 0.75rem;
+        right: 0.75rem;
+        background: rgba(0, 48, 135, 0.85);
+        color: #ffffff;
+        font-size: 0.85rem;
+        font-weight: 600;
+        padding: 0.4rem 0.75rem;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        backdrop-filter: blur(4px);
+    }
+
+    figcaption {
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+        color: #5c6f84;
+        font-style: italic;
+        text-align: center;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 23, 42, 0.75);
+        backdrop-filter: blur(4px);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .lightbox-content {
+        position: relative;
+        background: #ffffff;
+        padding: 1.5rem;
+        border-radius: 12px;
+        max-width: 90vw;
+        max-height: 85vh;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+    }
+
+    .lightbox-content img {
+        max-width: 100%;
+        max-height: 75vh;
+        object-fit: contain;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: -0.75rem;
+        right: -0.75rem;
+        background: #003087;
+        color: white;
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* Feature list styling */
+    .feature-list {
+        padding-left: 1.25rem;
+        line-height: 1.6;
+    }
+
+    .feature-list li {
+        margin-bottom: 0.75rem;
+        color: #334155;
+    }
+
+    /* Endorsement quote styling */
+    .endorsement-quote {
+        margin: 1.5rem 0 2.5rem 0;
+        padding: 1.75rem 2rem;
+        background: #f0f4f8;
+        border-left: 6px solid #005EB8; /* NHS Blue accent */
+        border-radius: 0 8px 8px 0;
+    }
+
+    .endorsement-quote p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #003087;
+        line-height: 1.5;
+        margin: 0 0 1rem 0;
+        max-width: 100%; /* Overrides 68ch so the quote fills the banner nicely */
+        font-style: italic;
+    }
+
+    .endorsement-quote cite {
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+    }
+
+    .endorsement-quote cite strong {
+        color: #111827;
+        font-size: 1rem;
+    }
+
+    .endorsement-quote cite span {
+        color: #5c6f84;
+        font-size: 0.9rem;
+    }
 </style>

@@ -1,8 +1,8 @@
-<h1 class="eprase-h1 w3-animate-left">EP Learning Lab</h1>
-<div class="accordion-text">
-    <ul>
-        <li>The Electronic Prescribing Learning Lab is an interactive learning resource developed to support digital and pharmacy teams to optimise their electronic prescribing systems.</li>
-        <li><a href="/learninglab.html" target="_blank" title="Learning Lab">Launch the Learning Lab</a></li>
-        <li>Access the <a href="/pdf/ll_bib.pdf" target="_blank" title="Learning Lab bibliography">bibliography for the Learning Lab</a></li> 
-    </ul>
+<script>
+    import { resolve } from '$app/paths';
+    import PdfViewer from '$lib/components/PdfViewer.svelte';
+</script>
+<div class="subpage">
+    <p>The Electronic Prescribing Learning Lab is an interactive learning resource developed to support digital and pharmacy teams to optimise their electronic prescribing systems. View below or <a href={resolve("/pdf/learning_lab.pdf")} target="_blank">download the PDF</a>.</p>
+    <PdfViewer src="/pdf/learning_lab.pdf" title="Learning Lab" />
 </div>
