@@ -7,7 +7,7 @@
         { name: 'About ePRaSE', path: '/about' },
         { name: 'The Team', path: '/about/team' },
         { name: 'Governance', path: '/about/governance' },
-        { name: 'The Users', path: '/about/users' },
+        { name: 'Participating Trusts', path: '/about/users' },
         { name: 'Contact Us', path: '/about/contact' }
     ];
 

@@ -33,7 +33,7 @@
             <div class="bio-content">
                 <h2>Neil W Watson</h2>
                 <span class="role-badge">Programme SRO</span>
-                <p>Neil is Director of Innovation at The Newcastle upon Tyne Hospitals NHS Foundation Trust and former Director of Pharmacy. He led the North East and North Cumbria COVID-19 Vaccination Programme, driving innovative approaches to address health inequalities. His interests include advanced therapies, genomics, population health, and clinical informatics to support healthcare transformation. Since 2018, he has been Co-Director of the Northern Alliance Advanced Therapies Treatment Centre, helping integrate advanced therapies into the NHS. He is also a member of the Rare Disease Research UK Hub, contributing NHS expertise to advance research and innovation.</p>
+                <p>Neil is Director of Strategic Development for Genomic Medicine at The Newcastle upon Tyne Hospitals NHS Foundation Trust and former Director of Innovation and Director of Pharmacy. He led the North East and North Cumbria COVID-19 Vaccination Programme, driving innovative approaches to address health inequalities. His interests include advanced therapies, genomics, population health, and clinical informatics to support healthcare transformation. Since 2018, he has been Co-Director of the Northern Alliance Advanced Therapies Treatment Centre, helping integrate advanced therapies into the NHS. He is also a member of the Rare Disease Research UK Hub, contributing NHS expertise to advance research and innovation.</p>
             </div>
         </div>
 
