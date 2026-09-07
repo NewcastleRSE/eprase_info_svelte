@@ -70,6 +70,17 @@
             </div>
         </div>
 
+        <div id="ellie" class="bio-card">
+            <div class="image-wrapper">
+                <img src={resolve("/img/team/ellie.webp")} alt="Ellie Smith" class="bio-image" />
+            </div>
+            <div class="bio-content">
+                <h2>Ellie Merrison</h2>
+                <span class="role-badge">Pharmacy Informatics Developer</span>
+                <p>Ellie is a Medicines Management System Developer within the Pharmacy Informatics team at The Newcastle upon Tyne Hospitals NHS Foundation Trust. A qualified Pharmacy Technician with over seven years' experience, she has held roles including Dispensary Accuracy Checker and Homecare Project Developer. With more than 16 years of NHS experience, Ellie also has a strong background in data analysis, having worked in Clinical Audit and Cancer Information services. She was part of an award-winning team that received a National Patient Safety Award in 2013 for work to reduce incident harm rates, which subsequently led to the development of a campaign to reduce Hospital Acquired Pneumonia across Northumbria Healthcare NHS Foundation Trust.</p>
+            </div>
+        </div>
+
         <div id="becky" class="bio-card">
             <div class="image-wrapper">
                 <img src={resolve("/img/team/becky.webp")} alt="Becky Osselton" class="bio-image" />
