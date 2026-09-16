@@ -26,44 +26,58 @@
         </div>
 
         <div class="news-grid">
-            <!-- Article 1: Major Endorsement -->
+            <!-- Article 1: Feature Item (ePRaSE Is Live) -->
             <article class="news-card feature-card">
                 <div class="news-meta">
-                    <span class="news-date">8 June 2026</span>
-                    <span class="news-badge endorsement">HSSIB Recognition</span>
+                    <span class="news-date">16 September 2026</span>
+                    <span class="news-badge live">ePRaSE Goes Live</span>
                 </div>
-                <h3>HSSIB Recognises ePRaSE as Key Tool</h3>
-                <p>
-                    The latest report from the Health Services Safety Investigations Body (HSSIB) examines the safety of electronic prescribing and medicines administration (ePMA) systems used across NHS acute hospitals and highlights the importance of robust mechanisms for identifying, assessing and learning from digital medication safety risks.
-                </p>
-                <p>
-                    Within the report, **ePRaSE is cited as an important tool** that NHS organisations can use to assess whether their ePMA systems are functioning as intended and supporting safe prescribing in practice.
-                </p>
-                <div class="news-action">
-                    <a href={resolve("/pdf/hssib_news.pdf")} target="_blank" class="btn-text">
-                        Read the full press release <span>→</span>
-                    </a>
+                
+                <h3>ePRaSE 2026 Is Now Live</h3>
+                <p>The latest version of ePRaSE (Electronic Prescribing Risk and Safety Evaluation) is now available. ePRaSE helps NHS organisations assess, benchmark, and improve the safety and optimisation of their ePrescribing and EPR systems.</p>
+
+                <!-- Clean, accessible feature list -->
+                <ul class="feature-checklist">
+                    <li>Instant feedback on medicines safety risks</li>
+                    <li>National benchmarking and reporting</li>
+                    <li>Adult and Paediatric assessments</li>
+                    <li>Enhanced reporting, archive, and user experience</li>
+                </ul>
+
+                <p class="tagline"><strong>Know your risk. Improve safety. Drive optimisation.</strong></p>
+
+                <div class="feature-footer">
+                    <div class="news-action">
+                        <a href="https://eprase.nuth.nhs.uk/" target="_blank" rel="noopener" class="btn-text">
+                            Get Started at eprase.nuth.nhs.uk <span>→</span>
+                        </a>
+                    </div>
+<!--
+                    <div class="qr-wrapper">
+                        <img class="qrCode" src={resolve("/img/eprase_qr.png")} alt="Scan to register for ePRaSE updates" />
+                        <span>Scan to register</span>
+                    </div>
+                -->
                 </div>
             </article>
 
-            <!-- Article 2: Version Update & QR Registration -->
+            <!-- Article 2: HSSIB Recognition -->
             <article class="news-card sync-card">
                 <div class="card-body-split">
                     <div class="news-content-block">
                         <div class="news-meta">
-                            <span class="news-badge coming-soon">Development</span>
+                            <span class="news-date">8 June 2026</span>
+                            <span class="news-badge endorsement">HSSIB Recognition</span>
                         </div>
-                        <h3>ePRaSE Version 5 Coming</h3>
-                        <p>
-                            The ePRaSE team are actively working on the next version of the tool, planned for release in <strong>early Autumn 2026</strong>. 
-                        </p>
-                        <p>
-                            If you have not previously had the chance to participate and would like to join the next cycle, please register to receive email updates.
-                        </p>
-                    </div>
-                    <div class="qr-wrapper">
-                        <img class="qrCode" src={resolve("/img/eprase_qr.png")} alt="Scan to register for ePRaSE updates" />
-                        <span>Scan to register</span>
+                        <h3>HSSIB Recognises ePRaSE as Key Tool</h3>
+                        <p>The latest report from the Health Services Safety Investigations Body (HSSIB) examines the safety of electronic prescribing and medicines administration (ePMA) systems used across NHS acute hospitals and highlights the importance of robust mechanisms for identifying, assessing, and learning from digital medication safety risks.</p>
+                        <p>Within the report, <strong>ePRaSE is cited as an important tool</strong> that NHS organisations can use to assess whether their ePMA systems are functioning as intended and supporting safe prescribing in practice.</p>
+                        
+                        <div class="news-action">
+                            <a href={resolve("/pdf/hssib_news.pdf")} target="_blank" rel="noopener" class="btn-text">
+                                Read the full press release <span>→</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -72,31 +86,31 @@
 </section>
 
 <style>
-	.banner-text {
-		font-family: "Raleway", sans-serif;
-		font-weight: 200;
-		color: var(--nhs-blue);
-		font-size: clamp(2.5rem, 5vw, 4rem);
-		z-index: 10;
-		pointer-events: none;
-		padding-left: clamp(5%, 10vw, 7%);
-		text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-		animation: fadeUp 0.8s ease-out forwards;
-	}
+    .banner-text {
+        font-family: "Raleway", sans-serif;
+        font-weight: 200;
+        color: var(--nhs-blue);
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        z-index: 10;
+        pointer-events: none;
+        padding-left: clamp(5%, 10vw, 7%);
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        animation: fadeUp 0.8s ease-out forwards;
+    }
 
-	.banner-text .main-text {
-		width: 50%;
-		line-height: 1.2;
-	}
+    .banner-text .main-text {
+        width: 50%;
+        line-height: 1.2;
+    }
 
-	.banner-text .sub-text {
-		font-size: clamp(1.2rem, 3vw, 2rem);
-		margin-top: 0.5em;
-		color: var(--nhs-dark-blue);
-		text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-	}
+    .banner-text .sub-text {
+        font-size: clamp(1.2rem, 3vw, 2rem);
+        margin-top: 0.5em;
+        color: var(--nhs-dark-blue);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    }
 
-	.home-banner {
+    .home-banner {
         view-transition-name: pill-box;
         position: relative;
         display: flex;
@@ -107,20 +121,21 @@
         border-bottom: 1px solid #e2e8f0;
         overflow: hidden;
         background-color: #eff3fb;
-		/* use top nav 'clamp' height for calculation */
+        /* use top nav 'clamp' height for calculation */
         height: calc(100vh - clamp(80px, 15vmin, 160px)); 
         min-height: 450px;
     }
-	
-	.home-banner :global(.pill-stage) {
-		position: absolute; 
+    
+    .home-banner :global(.pill-stage) {
+        position: absolute; 
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
         z-index: 1;
-	}
-	.home-banner::after {
+    }
+
+    .home-banner::after {
         content: '';
         position: absolute;
         top: 0;
@@ -129,13 +144,12 @@
         height: 100%;
         /* This sits on top of the pills */
         box-shadow: inset 0 60px 60px -60px rgba(34, 61, 152, 0.15),
-					inset 0 -60px 60px -60px rgba(34, 61, 152, 0.15); 
+                    inset 0 -60px 60px -60px rgba(34, 61, 152, 0.15); 
         pointer-events: none;
         z-index: 2; 
     }
 
-
-	.news-section {
+    .news-section {
         background-color: #f8fafc; 
         padding: 5rem 2rem;
         border-top: 1px solid #e2e8f0;
@@ -169,7 +183,7 @@
         font-weight: 700;
     }
 
-	/** News Grid Layout */
+    /** News Grid Layout */
     .news-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -217,7 +231,7 @@
         color: #0369a1;
     }
 
-    .news-badge.coming-soon {
+    .news-badge.live {
         background-color: #fef3c7;
         color: #b45309;
     }
@@ -232,13 +246,17 @@
     .news-card p {
         color: #475569;
         line-height: 1.6;
-        font-size: 1.05rem;
+        font-size: 1.25rem;
         margin: 0 0 1.25rem 0;
+    }
+
+    .news-card.sync-card p {
+        font-size: 1.05rem;
     }
 
     /* Link Interactions */
     .news-action {
-        margin-top: auto;
+        margin: auto;
         padding-top: 1rem;
     }
 
@@ -263,43 +281,125 @@
         height: 100%;
     }
 
-    .qr-wrapper {
-        background: #f1f5f9;
-        padding: 1.5rem;
+    /* Custom Green Checkmark Feature List */
+    .feature-checklist {
+        list-style: none; /* Removes default black dots */
+        padding: 0;
+        margin: 1.25rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem; /* Neat vertical spacing between items */
+    }
+
+    .feature-checklist li {
+        position: relative;
+        padding-left: 2rem; /* Creates room for the custom tick icon */
+        font-size: 1.25rem;
+        color: #1e293b;
+        line-height: 1.4;
+        font-weight: 500;
+    }
+
+    /* Custom Green SVG Checkmark Icon */
+    .feature-checklist li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 20px;
+        height: 20px;
+        /* Inline vector SVG tick for instant loading and crisp rendering */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /* ==========================================================================
+       FEATURE CARD FOOTER & PRIMARY ACTION
+       ========================================================================== */
+    .feature-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* Vertically centers the button and QR block */
+        gap: 1.5rem;
+        margin-top: auto; /* Pushes footer neatly to the bottom of the card */
+        padding-top: 1.25rem;
+        border-top: 1px solid #e2e8f0;
+    }
+
+    /* Primary Button CTA for Feature Card */
+    .feature-footer .btn-text {
+        background-color: var(--nhs-blue, #005eb8);
+        color: #ffffff;
+        padding: 0.85rem 1.4rem;
         border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.05rem;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .feature-footer .btn-text:hover {
+        background-color: var(--nhs-dark-blue, #003087);
+        color: #ffffff;
+        transform: translateY(-1px);
+    }
+
+    .feature-footer .qr-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 0.75rem;
-        align-self: center;
-        width: 160px;
+        width: auto;
+        padding: 0.6rem 0.85rem;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        gap: 0.35rem;
+        flex-shrink: 0;
     }
 
-    .qrCode {
-        width: 128px;
-        height: 128px;
+    .feature-footer .qrCode {
+        width: 75px;
+        height: 75px;
         display: block;
     }
 
-    .qr-wrapper span {
-        font-size: 0.8rem;
+    .feature-footer .qr-wrapper span {
+        font-size: 0.7rem;
         font-weight: 600;
         color: #64748b;
         text-transform: uppercase;
+        letter-spacing: 0.02em;
     }
 
+    /* ==========================================================================
+       RESPONSIVE MEDIA QUERIES
+       ========================================================================== */
     @media (min-width: 500px) and (max-width: 849px) {
-        .card-body-split {
+        .sync-card .card-body-split {
             flex-direction: row;
             align-items: center;
         }
-        .qr-wrapper {
+        .sync-card .qr-wrapper {
             align-self: auto;
         }
     }
 
-	/** Scroll Indicator */
+    @media (max-width: 640px) {
+        .feature-footer {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 1.25rem;
+        }
+
+        .feature-footer .qr-wrapper {
+            align-self: flex-start;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    /** Scroll Indicator */
     .scroll-indicator {
         position: absolute;
         bottom: 2rem;
@@ -349,11 +449,11 @@
 
     @keyframes bounceBreathe {
         0%, 100% {
-            transform: translate(-50__, 0);
+            transform: translate(-50%, 0);
             opacity: 0.6;
         }
         50% {
-            transform: translate(-50__, 8px); 
+            transform: translate(-50%, 8px); 
             opacity: 1;
         }
     }
